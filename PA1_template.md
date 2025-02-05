@@ -145,7 +145,7 @@ We create a panel plot of the 5-minute interval (x-axis) and the average number 
 
 ``` r
 library(lattice)
-xyplot(steps ~ interval | weekday, data = average_activity_filled, type="l", layout = c(1, 2), xlab="Interval", ylab="Number of steps")
+xyplot(steps ~ interval | weekday, data = average_activity_filled, type="l", layout = c(1, 2), xlab="Interval", ylab="Number of steps", main="Average activity per day during weekdays and weekends")
 ```
 
 ![](PA1_template_files/figure-html/weekday_weekend_plot-1.png)<!-- -->
